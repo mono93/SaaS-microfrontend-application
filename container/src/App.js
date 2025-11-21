@@ -19,7 +19,7 @@ const generateClassName = createGenerateClassName({
 
 const history = createBrowserHistory();
 
-export default () => {
+function App() {
   const [isSignedIn, setIsSignedIn] = useState(false);
 
   useEffect(() => {
@@ -53,3 +53,5 @@ export default () => {
     </Router>
   );
 };
+
+export default App;
